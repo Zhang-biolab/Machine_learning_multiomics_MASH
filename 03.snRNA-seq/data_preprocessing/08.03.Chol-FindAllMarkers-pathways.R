@@ -224,7 +224,7 @@ seu <- readRDS(inFile)
 DefaultAssay(seu) <- "SCT"
 harmony_reduction <- 'umap_harmony_t.0'
 
-# 如果在 PrepSCTFindMarkers 之后你想提取子集然后寻找差异基因,需要加上 recorrect_umi = FALSE 参数
+# PrepSCTFindMarkers recorrect_umi = FALSE
 seu <- PrepSCTFindMarkers(seu, assay = "SCT", verbose = TRUE)
 Idents(seu) <- 'SCT_snn_harmony_t.0.0.2'
 

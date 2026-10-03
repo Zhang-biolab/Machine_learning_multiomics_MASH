@@ -114,7 +114,6 @@ ggsave(paste0(plotDir, 'fig5_cluster_splitbyfibrosis.pdf'), device = 'pdf',  hei
 
 
 ## test %change for a cell_type 
-## Wilcoxon rank-sum test 秩和检验，适用于非成对样本
 seu <- readRDS(inFile)
 table(seu@meta.data$SCT_snn_harmony_t.0.0.2)
 
